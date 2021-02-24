@@ -1,0 +1,7 @@
+posts:
+    path: /posts
+    controller: App\Controller\ApiController::getAllPosts
+
+post:
+    path: /post/{id}
+    controller: App\Controller\ApiController::getPost
