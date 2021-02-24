@@ -1,7 +1,11 @@
 posts:
     path: /posts
     controller: App\Controller\ApiController::getAllPosts
+    methods:    GET
 
 post:
-    path: /post/{id}
+    path: /posts/{id}
     controller: App\Controller\ApiController::getPost
+    methods:    GET
+    requirements:
+        id: '\d+'
